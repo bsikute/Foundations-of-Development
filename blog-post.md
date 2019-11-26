@@ -3,12 +3,13 @@ Virtualization enables workloads to run in environments that are separated from 
 To better understand this concept, there is that has one giant room for one guest. Nobody needs that much space, so 90% of the building goes unused.
 Container technology offers an alternative method for virtualization, in which a single operating system on a host can run many different applications. Containers provide isolated runtime environments for applications: the entire user space environment is exclusively presented to the container, and any changes to it do not impact other containers’ environments. 
 One way to think of containers vs. VMs is that while VMs run several different operating systems on one compute node, container technology offers the opportunity to virtualize the operating system itself.
- 
+
+![Comparison](https://i2.wp.com/www.docker.com/blog/wp-content/uploads/Blog.-Are-containers-..VM-Image-1-1024x435.png?ssl=1)
 Fig .1: Comparison of how containers and virtual machines are organized. Source: Docker
 
 ### Which one is better?
-|Parameter	|Virtualization|	Containerization|
-| --------- | ------------ | -----------------|
+|Parameter	|Virtualization|Containerization|
+| ---------|------------|-----------------|
 |Guest OS|	Each VM runs on a hypervisor and Kernel is loaded into its own memory region	|All the guests share same OS and Kernel. kernel image is loaded into the physical memory|
 |Networking|	Can be linked to virtual or physical switches.| Hypervisors have the buffers for IO performance improvement, NIC bonding, etc.	Leveraged standard IPC mechanisms like signals, pipes, sockets, etc. Advanced features like NIC bonding still not available|
 |Security	|Complete Isolation|	Isolation using technology like namespaces|
