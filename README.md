@@ -112,8 +112,6 @@ Docker is a set of platform as a service products that use OS-level virtualizati
 	$ docker push myrepo/myimage:2.0 
 
 
-### Run
-
 # PowerShell
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
 
