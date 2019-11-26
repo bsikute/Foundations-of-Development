@@ -3,6 +3,14 @@ The following is a reference guide that demonstrates some commands used to work 
 
 # GIT
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+##Configure tooling
+Configure user information for all local repositories
+  
+  $ git config --global user.name "[name]"
+  //Sets the name you want attached to your commit transactions
+  
+  $ git config --global user.email "[email address]"
+  //Sets the email you want attached to your commit transactions
 
 # Docker
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
