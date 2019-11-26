@@ -50,8 +50,7 @@ Git is a free and open source distributed version control system designed to han
     Downloads all history from the remote tracking branches
     
     $ git pull
-    Updates your current local working branch with all new
-    commits from the corresponding remote branch on GitHub.
+    Updates your current local working branch with all new commits from the corresponding remote branch on GitHub.
     git pull is a combination of git fetch and git merge
   
    ### Redo commits
