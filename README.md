@@ -180,3 +180,63 @@ This command renames the file daily_file.txt to monday_file.txt
 
 # Bash
 GNU Bash or simply Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell.
+
+### uname
+uname is a computer program in Unix and Unix-like computer operating systems that prints the name, version and other details about the current machine and the operating system running on i
+
+	// Example		
+	$ uname -a
+
+### mkdir - make directories
+The mkdir command in the Unix, DOS, DR FlexOS, IBM OS/2, Microsoft Windows, and ReactOS operating systems is used to make a new directory.
+
+	$ mkdir newDirectory
+
+### mv - rename file/directory
+mv is a Unix command that moves one or more files or directories from one place to another. If both filenames are on the same filesystem, this results in a simple file rename; otherwise the file content is copied to the new location and the old file is removed.
+
+$ mv newDirectory newName
+
+### cp - copy file/directory
+In computing, cp is a command in various Unix and Unix-like operating systems for copying files and directories.
+
+	// Example: copy all files with extension txt in current location to directory tmp
+	$ cp *.txt /tmp
+
+### rmdir - remove empty directories
+n computing, rmdir is a command which will remove an empty directory on various operating systems. It is available in Unix, Unix-like, DOS, DR FlexOS, IBM OS/2, Microsoft Windows or ReactOS operating systems. On MS-DOS, the command is available in versions 2 and later
+
+	$rmdir newDirectory
+
+### rm - remove files or directories
+n computing, rm is a basic command on Unix and Unix-like operating systems used to remove objects such as computer files, directories and symbolic links from file systems and also special files such as device nodes, pipes and sockets, similar to the del command in MS-DOS, OS/2, and Microsoft Windows.
+
+	$ rm newDirectory
+
+
+### cat
+cat is a standard Unix utility that reads files sequentially, writing them to standard output. The name is derived from its function to concatenate files
+	
+	// Example to display contents of file /etc/passwd
+	$ cat /etc/passwd
+
+### cut
+In computing, cut is a Unix command line utility which is used to extract sections from each line of input — usually from a file. It is currently part of the GNU coreutils package and the BSD Base System.
+
+	// Example: 
+	$ cut -d : -f 1,7 /etc/passwd
+
+### awk
+AWK is a domain-specific language designed for text processing and typically used as a data extraction and reporting tool. It is a standard feature of most Unix-like operating systems
+
+Printing Column or Field
+You can instruct AWK to print only certain columns from the input field. The following example demonstrates this −
+
+	// Example
+	$ awk '{print $3 "\t" $4}' marks.txt
+
+### find
+In Unix-like and some other operating systems, find is a command-line utility that locates files based on some user-specified criteria and then applies some requested action on each matched object
+
+	// Example to find all txt files in / directory
+	$ find -iname "*.txt" / 
