@@ -71,8 +71,7 @@ Docker is a set of platform as a service products that use OS-level virtualizati
     $ docker run --name mywildfly -d -p 8080:8080 jboss/wildfly
     
     // Run a detached container mounting a local folder inside the container:
-    $ docker run --name mywildfly-volume -d \
-    -v myfolder/:/opt/jboss/wildfly/standalone/deployments/ \
+    $ docker run --name mywildfly-volume -d -v myfolder/:/opt/jboss/wildfly/standalone/deployments/ \
     -p 8080:8080 jboss/wildflyjboss/wildfly
 
     // Follow the logs of a specific container:
@@ -87,16 +86,32 @@ Docker is a set of platform as a service products that use OS-level virtualizati
     
     // Remove a container:
     $ docker rm [container-name|container-id]
-	 
-    // Force stop and remove a container
-    $ docker rm -f [container-name|container-id]
     
-    // Execute a new process in an existing container:
-	 # Execute and access bash inside a WildFly container
+    // Execute a new process in an existing container: Execute and access bash inside a WildFly container
     $ docker exec -it mywildfly /bin/bash
 
 
-### Share
+### Image Related Commands
+	// Build an image using a Dockerfile:
+	$ docker build -t [username/]<image-name>[:tag] <dockerfile-path>
+	
+	// Build an image called myimage using the Dockerfile in the same folder where the command was executed
+	$ docker build -t myimage:latest .
+	
+	// List the images
+	$ docker images
+	
+	// Tag an image
+	Creates an image called “myimage” with the tag “v1” for the image jboss/wildfly:latest
+	$ docker tag jboss/wildfly myimage:v1
+	
+	// Pull an image from a registry
+	$ docker pull myimage:1.0
+	
+	// Push an image to a registry
+	$ docker push myrepo/myimage:2.0 
+
+
 ### Run
 
 # PowerShell
