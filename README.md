@@ -1,5 +1,5 @@
 # Foundations-of-Development Course Project
-##### Index
+### Index
 1. [Reference Guide - GIT, Docker, PowerShell and Bash](https://github.com/bsikute/Foundations-of-Development/blob/Reference-Guide/README.md#reference-guide---git-docker-powershell-and-bash)
      1. [GIT ](https://github.com/bsikute/Foundations-of-Development/blob/Reference-Guide/README.md#git)
      2. [Docker](https://github.com/bsikute/Foundations-of-Development/blob/Reference-Guide/README.md#docker)
