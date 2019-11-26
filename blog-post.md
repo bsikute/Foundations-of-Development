@@ -1,4 +1,5 @@
 ## Virtualization vs. Containerization
+
 **Virtualization** enables workloads to run in environments that are separated from their underlying hardware by a layer of abstraction. This abstraction allows servers to be broken up into VMs that can run different operating systems. Thus a virtual machine (VM) is an emulation of particular computer system, its resources such as CPU, RAM and DISK space using a piece of computer software called a hypervisor that creates and runs virtual machines.
 
 To better understand this concept, there is that has one giant room for one guest. Nobody needs that much space, so 90% of the building goes unused.
