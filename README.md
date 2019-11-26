@@ -14,7 +14,7 @@ Git is a free and open source distributed version control system designed to han
     $ git config --global user.email "[email address]"
     
    ### Create repositories
-   When starting out with a new repository, you only need to do it once; either locally, 
+   When starting out with a new repository, you only need to do it once; either locally,  
    then push to GitHub, or by cloning an existing repository
    
     // Sets the
