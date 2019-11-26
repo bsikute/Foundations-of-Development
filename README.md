@@ -8,10 +8,10 @@ Git is a free and open source distributed version control system designed to han
    Configure user information for all local repositories
 
     // Sets the name you want attached to your commit transactions
-    $ git config --global user.name "[name]"
+    $ git config --global user.name "bsikute"
     
     // Sets the email you want attached to your commit transactions
-    $ git config --global user.email "[email address]"
+    $ git config --global user.email "bsikute@gmail.com"
     
    ### Create repositories
    When starting out with a new repository, you only need to do it once; either locally,  
@@ -19,14 +19,40 @@ Git is a free and open source distributed version control system designed to han
    
     // Sets the
     Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
-    $ git clone [url]
+    $ git clone https://github.com/bsikute/Git-Collab_task.git
     
    ### Branching
    Branches are an important part of working with Git. Any commits you make will be made on the branch 
    you're currently “checked out” to. Use git status to see which branch that is.
    
-    $ git branch [branch-name]
-    Creates a new branch
+    $ git branch newBranch
+    Creates a new branch called newBranch
+    
+    $ git checkout newBranch
+      Switches to the specified branch (newBranch) and updates the
+      working directory
+
+    $ git merge newBranch
+      Combines the specified branch’s history into the
+      current branch. This is usually done in pull requests,
+      but is an important Git operation
+      
+   ### Synchronize changes
+   Synchronize your local repository with the remote repository on GitHub.com
+   
+    $ git push
+    Uploads all local branch commits to GitHub
+
+    $ git merge
+    Combines remote tracking branch into current local branch
+    
+    $ git fetch
+    Downloads all history from the remote tracking branches
+    
+    $ git pull
+    Updates your current local working branch with all new
+    commits from the corresponding remote branch on GitHub.
+    git pull is a combination of git fetch and git merge
   
 
 # Docker
