@@ -54,6 +54,14 @@ Git is a free and open source distributed version control system designed to han
     commits from the corresponding remote branch on GitHub.
     git pull is a combination of git fetch and git merge
   
+   ### Redo commits
+   Erase mistakes and craft replacement history
+
+    $ git reset [commit]
+    Undoes all commits after [commit], preserving changes locally
+    
+    $ git reset --hard [commit]
+    Discards all history and changes back to the specified commit
 
 # Docker
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
