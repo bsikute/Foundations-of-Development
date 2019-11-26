@@ -6,6 +6,7 @@ Git is a free and open source distributed version control system designed to han
 
 ## Configure tooling
 Configure user information for all local repositories
+
     // Sets the name you want attached to your commit transactions
     $ git config --global user.name "[name]"
     // Sets the email you want attached to your commit transactions
