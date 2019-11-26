@@ -115,5 +115,68 @@ Docker is a set of platform as a service products that use OS-level virtualizati
 # PowerShell
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
 
+### Get-Help
+The Get-Help command can be used to literally get help with any other PowerShell command. For example, if you know the name of a command, but you don’t know what it does or how to use it, the Get-Help command provides the full command syntax.
+
+	// Example
+	PS C:\> Get-Help -Name Get-Process
+
+### Get-Service
+One of the most important commands is Get-Service, which provides the user with a list of all services installed on the system, both running and stopped. 
+
+	// Example
+	PS C:\ Get-Service | Where-Object {$_.Status -eq “Running”}
+
+### Get-Process
+If you want to view all processes currently running on your system, the Get-Process command is very important. To get a list of all active processes on your computer, type:
+
+	//Example
+	PS C:\ Get-Process
+
+### Get-Command
+Get-Command is an easy-to-use reference cmdlet that brings up all the commands available for use in your current session.
+
+	// Simply type in this command:
+	PS C:\ Get-Command
+
+### Get-EventLog
+You can actually use PowerShell to parse your machine’s event logs using the Get-EventLog cmdlet. There are several parameters available. Use the -Log switch followed by the name of the log file to view a specific log. You’d use the following command, for example, to view the Application log:
+
+	//
+	PS C:\ Get-EventLog -Log "Application"
+
+### Clear-Content
+If you want to delete the contents of an item but retain the item itself, you’ll use the Clear-Content cmdlet:
+
+	// Example
+	PS C:\ Clear-Content C:\Temp\TestFile.tx
+
+### Checkpoint-Computer
+If you’re making major changes or running a risky experiment, you can set a restore point on your machine with the Checkpoint-Computer cmdlet.
+
+Note that you can only create a restore point using this cmdlet once every 24 hours. If you run the command again, it will keep the previous restore point:
+
+	// Example
+	PS C:\> Checkpoint-Computer -Description "My 2nd checkpoint" -RestorePointType "Modify_Settings
+
+### Get-ChildItem
+Get-ChildItem displays the files and directories in the PowerShell console. By default Get-ChildItem lists the mode (Attributes), LastWriteTime, file size (Length), and the Name of the item.
+
+	// Example 
+	PS C:\ Get-ChildItem
+
+### New-Item
+The New-Item cmdlet creates a new item and sets its value. The types of items that can be created depend on the location of the item. For example, in the file system, New-Item creates files and folders. In the registry, New-Item creates registry keys and entries
+
+	// Example 
+	PS C:\ New-Item
+
+### Rename-Item
+This command renames the file daily_file.txt to monday_file.txt
+
+	// Example 
+	PS C:\ Rename-Item -Path "c:\logfiles\daily_file.txt" -NewName "monday_file.txt"
+
+
 # Bash
 GNU Bash or simply Bash is a Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell.
