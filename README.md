@@ -66,6 +66,39 @@ Git is a free and open source distributed version control system designed to han
 # Docker
 Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.
 
+### Container Related Example Commands
+    // Run a container in detached mode:
+    $ docker run --name mywildfly -d -p 8080:8080 jboss/wildfly
+    
+    // Run a detached container mounting a local folder inside the container:
+    $ docker run --name mywildfly-volume -d \
+    -v myfolder/:/opt/jboss/wildfly/standalone/deployments/ \
+    -p 8080:8080 jboss/wildflyjboss/wildfly
+
+    // Follow the logs of a specific container:
+    $ docker logs -f mywildfly
+    $ docker logs -f [container-name|container-id]
+
+    // List containers: List only active containers
+    $ docker ps
+    
+    // Stop a container:
+    $ docker stop [container-name|container-id]
+    
+    // Remove a container:
+    $ docker rm [container-name|container-id]
+	 
+    // Force stop and remove a container
+    $ docker rm -f [container-name|container-id]
+    
+    // Execute a new process in an existing container:
+	 # Execute and access bash inside a WildFly container
+    $ docker exec -it mywildfly /bin/bash
+
+
+### Share
+### Run
+
 # PowerShell
 PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and associated scripting language.
 
