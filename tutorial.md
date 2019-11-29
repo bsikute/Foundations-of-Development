@@ -104,3 +104,6 @@ The version argument hereby marks the new hotfix release name. Optionally you ca
 By finishing a hotfix it gets merged back into develop and master. Additionally the master merge is tagged with the hotfix version.
 
         $ git flow hotfix finish VERSION
+
+### Commands
+![Commands](https://danielkummer.github.io/git-flow-cheatsheet/img/git-flow-commands.png)
