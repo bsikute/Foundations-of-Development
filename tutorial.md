@@ -36,7 +36,7 @@ Development of new features starting from the 'develop' branch.
     - A new branch 'feature/feature/myfeature' was created, based on 'develop'                          
     - You are now on branch 'feature/feature/myfeature'                                                                                                                                                     
     Now, start committing on your feature. When done, use:                                                                                                                                                       
-    git flow feature finish feature/myfeature 
+        git flow feature finish feature/myfeature 
     
 This action creates a new feature branch based on 'develop' and switches to it
 
@@ -61,9 +61,25 @@ Finish the development of a feature. This action performs the following
 ### Publish a feature
 Are you developing a feature in collaboration? Publish a feature to the remote server so it can be used by other users.
 
-        $ git flow feature publish MYFEATURE
+        $ git flow feature publish myfeature
+        
+        Total 0 (delta 0), reused 0 (delta 0)
+        remote:
+        remote: Create a pull request for 'feature/myfeature' on GitHub by visiting:
+        remote:      https://github.com/bsikute/gitflow101/pull/new/feature/myfeature
+        remote:
+        To https://github.com/bsikute/gitflow101.git
+        * [new branch]      feature/myfeature -> feature/myfeature
+        Branch 'feature/myfeature' set up to track remote branch 'feature/myfeature' from 'origin'.
+        Already on 'feature/myfeature'
+        Your branch is up to date with 'origin/feature/myfeature'.
+        
+        Summary of actions:                                                                                 
+        - The remote branch 'feature/myfeature' was created or updated                                      
+        - The local branch 'feature/myfeature' was configured to track the remote branch                    
+        - You are now on branch 'feature/myfeature' 
 
-Getting a published feature
+#### Getting a published feature
 Get a feature published by another user.
 
        $ git flow feature pull origin MYFEATURE
@@ -80,7 +96,15 @@ You can track a feature on origin by using
 ### Start a release
 To start a release, use the git flow release command. It creates a release branch created from the 'develop' branch.
 
-        $ git flow release start RELEASE [BASE]
+        $ git flow release start RELEASE
+        
+        Switched to a new branch 'release/RELEASE'
+        Summary of actions:                                                                                 
+        - A new branch 'release/RELEASE' was created, based on 'develop'                                    
+        - You are now on branch 'release/RELEASE'                                                                                       Follow-up actions:                                                                                  
+        - Bump the version number now!                                                                      
+        - Start committing last-minute fixes in preparing your release                                      
+        - When done, run:                                                                                                                   git flow release finish 'RELEASE'       
 
 You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.
 
@@ -90,7 +114,7 @@ It's wise to publish the release branch after creating it to allow release commi
 
 (You can track a remote release with the
 
-        $ git flow release track RELEASE command)
+        $ git flow release track RELEASE command
 
 ### Finish up a release
 Finishing a release is one of the big steps in git branching. It performs several actions:
