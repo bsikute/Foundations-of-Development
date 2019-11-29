@@ -74,7 +74,8 @@ Are you developing a feature in collaboration? Publish a feature to the remote s
         Already on 'feature/myfeature'
         Your branch is up to date with 'origin/feature/myfeature'.
         
-        Summary of actions:                                                                                 
+        Summary of actions:
+        
         - The remote branch 'feature/myfeature' was created or updated                                      
         - The local branch 'feature/myfeature' was configured to track the remote branch                    
         - You are now on branch 'feature/myfeature' 
@@ -99,9 +100,14 @@ To start a release, use the git flow release command. It creates a release branc
         $ git flow release start RELEASE
         
         Switched to a new branch 'release/RELEASE'
-        Summary of actions:                                                                                 
+        
+        Summary of actions: 
+        
         - A new branch 'release/RELEASE' was created, based on 'develop'                                    
-        - You are now on branch 'release/RELEASE'                                                                                       Follow-up actions:                                                                                  
+        - You are now on branch 'release/RELEASE'
+        
+        Follow-up actions:
+        
         - Bump the version number now!                                                                      
         - Start committing last-minute fixes in preparing your release                                      
         - When done, run:                                                                                                                   git flow release finish 'RELEASE'       
