@@ -29,7 +29,14 @@ It's recommended to use the default values.
 Development of new features starting from the 'develop' branch.
 
     // Start developing a new feature with
-    git flow feature start MYFEATURE
+    $ git flow feature start myfeature
+    
+    Switched to a new branch 'feature/feature/myfeature'
+    Summary of actions:                                                                                 
+    - A new branch 'feature/feature/myfeature' was created, based on 'develop'                          
+    - You are now on branch 'feature/feature/myfeature'                                                                                                                                                     
+    Now, start committing on your feature. When done, use:                                                                                                                                                       
+    git flow feature finish feature/myfeature 
     
 This action creates a new feature branch based on 'develop' and switches to it
 
@@ -40,7 +47,16 @@ Finish the development of a feature. This action performs the following
 2. Removes the feature branch
 3. Switches back to 'develop' branch
 
-        $ git flow feature finish MYFEATURE
+        $ git flow feature finish myfeature
+        
+        Switched to branch 'develop'
+        Already up to date.
+        Deleted branch feature/myfeature (was 4fe95c8).
+        
+        Summary of actions:                                                                                 
+        - The feature branch 'feature/myfeature' was merged into 'develop'                                  
+        - Feature branch 'feature/myfeature' has been locally deleted                                       
+        - You are now on branch 'develop'
 
 ### Publish a feature
 Are you developing a feature in collaboration? Publish a feature to the remote server so it can be used by other users.
