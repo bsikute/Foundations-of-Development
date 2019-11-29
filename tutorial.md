@@ -110,7 +110,9 @@ To start a release, use the git flow release command. It creates a release branc
         
         - Bump the version number now!                                                                      
         - Start committing last-minute fixes in preparing your release                                      
-        - When done, run:                                                                                                                   git flow release finish 'RELEASE'       
+        - When done, run:
+            
+            git flow release finish 'RELEASE'       
 
 You can optionally supply a [BASE] commit sha-1 hash to start the release from. The commit must be on the 'develop' branch.
 
