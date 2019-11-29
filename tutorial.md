@@ -100,7 +100,7 @@ Like the other git flow commands, a hotfix is started with
         
 The version argument hereby marks the new hotfix release name. Optionally you can specify a basename to start from.
 
-## Finish a hotfix
+### Finish a hotfix
 By finishing a hotfix it gets merged back into develop and master. Additionally the master merge is tagged with the hotfix version.
 
         $ git flow hotfix finish VERSION
